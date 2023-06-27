@@ -13,13 +13,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <head>
                 <title>the zcd portfolio</title>
             </head>
-            <body className="bg-gradient-radial from-black to-white shadow-lg border-2 border-gray-300 rounded-lg p-4">
-                <Providers>
+            <Providers>
+                <body className="bg-gradient-radial from-black to-white shadow-lg border-2 border-gray-300 rounded-lg">
                     <Header darkMode={darkMode} setDarkMode={setDarkMode} />
                     {children}
                     <Footer />
-                </Providers>
-            </body>
+                </body>
+            </Providers>
         </html>
     )
 }

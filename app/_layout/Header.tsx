@@ -8,8 +8,7 @@ export default function Header({ darkMode, setDarkMode }: { darkMode: boolean; s
     }
     return (
         <header>
-            <p> This is a header. </p>
-            <nav className="flex flex-row align-middle justify-between bg-gray-800 text-white px-4 py-2">
+            <nav className="flex flex-row align-middle justify-between bg-gray-800 text-white px-4 py-2 rounded-t-lg">
                 <ul className="flex flex-row space-x-4">
                     <a className="">My Website</a>
                     <li>
