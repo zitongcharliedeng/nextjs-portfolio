@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$smaller-screen-length: min(90vh, 90vw);
+
+body {
+  width: $smaller-screen-length;
+  height: $smaller-screen-length;
+
+  // center the square view area
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  // shadowy border
+}
