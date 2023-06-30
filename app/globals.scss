@@ -5,14 +5,24 @@
 $smaller-screen-length: min(90vh, 90vw);
 
 body {
-  width: $smaller-screen-length;
-  height: $smaller-screen-length;
+    width: $smaller-screen-length;
+    height: $smaller-screen-length;
 
-  // center the square view area
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    // center the square view area
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  // shadowy border
+    // shadowy border
 }
+
+// START: header tabs //
+.header-tabs span,
+.header-tabs a {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+    
+// END: header tabs //
