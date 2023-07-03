@@ -37,9 +37,16 @@ $smaller-screen-length: min(90vh, 90vw);
 // END: header tabs //
 
 .notebook-lines {
-    line-height: 2ch;
+    font-size: larger;
+    // self
     $notebook-yellow: rgb(194, 165, 36);
     $notebook-white: rgba(255, 255, 255, 0.884);
     background-image: repeating-linear-gradient($notebook-white 0ch, $notebook-white 1.8ch, $notebook-yellow 1.8ch, $notebook-yellow 2ch);
     background-size: 100% 2ch;
+    line-height: 2ch;
+    // children
+    color: black;
+    a {
+        text-decoration: underline;
+    }
 }
