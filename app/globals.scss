@@ -4,7 +4,7 @@
 
 $smaller-screen-length: min(90vh, 90vw);
 
-body {
+.floppy-disk-1 {
     // create square floppy disk container
     width: $smaller-screen-length;
     height: $smaller-screen-length;
@@ -16,10 +16,14 @@ body {
     transform: translate(-50%, -50%);
 
     // floppy disk's metal shutter (header/ navbar)
-    .header {
-        
+    header {
+        nav {
+        }
     }
-    
+    // floppy disk's notebook page
+    main {
+        overflow-y: scroll;
+    }
 }
 
 // START: header tabs //
@@ -29,5 +33,5 @@ body {
     width: 100% !important;
     height: 100% !important;
 }
-    
+
 // END: header tabs //
