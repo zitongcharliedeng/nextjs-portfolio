@@ -11,9 +11,9 @@ export default function Header({ router, darkMode, setDarkMode, }: { router: any
         <header>
             <nav className="flex flex-row align-middle justify-between bg-gray-800 text-white px-4 py-2 rounded-t-lg">
                 <HeaderTabs router={router} />
-                <div className="flex flex-col">
+                <div className="flex flex-col items-center">
                     <Button onPress={handleThemeChange}>🌞/🌑</Button>
-                    <Image width={100} height={100} alt="LinkedIn Image" src="linkedin.svg" />
+                    <Image className="mt-auto py-1" width={90} height={90} alt="LinkedIn Image" src="linkedin.svg" />
                 </div>
             </nav>
         </header>
