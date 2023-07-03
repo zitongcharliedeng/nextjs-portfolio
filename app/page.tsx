@@ -1,3 +1,11 @@
+import { Card, CardBody } from "@nextui-org/card"
+
 export default function Home() {
-    return <h1>Hello my name is Charlie. This is the home page of my nextjs portfolio.</h1>
+    return (
+        <div>
+            <Card isBlurred className="border-none notebook-lines">
+                <CardBody>Welcome</CardBody>
+            </Card>
+        </div>
+    )
 }

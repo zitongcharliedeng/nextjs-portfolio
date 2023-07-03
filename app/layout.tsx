@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Providers>
                     <div className="floppy-disk-1 flex flex-col bg-gradient-radial from-black to-white shadow-lg border-2 border-gray-300 rounded-lg">
                         <Header router={router} darkMode={darkMode} setDarkMode={setDarkMode} />
-                        <main className="flex-grow overflow-y-auto">{children}</main>
+                        <main className="notebook-lines flex-grow overflow-y-auto py-2 px-2">{children}</main>
                         <Footer />
                     </div>
                 </Providers>
