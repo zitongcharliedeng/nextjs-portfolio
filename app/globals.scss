@@ -23,6 +23,7 @@ $smaller-screen-length: min(90vh, 90vw);
     // floppy disk's notebook page
     main {
         overflow-y: scroll;
+        padding: 1ch;
     }
 }
 
@@ -49,4 +50,9 @@ $smaller-screen-length: min(90vh, 90vw);
     a {
         text-decoration: underline;
     }
+    // TODO: PADDING IS CAUSING TEXT TO NOT LIE ON THE NOTEBOOK COORECTLYY, MB NAKE THE PADDING A MUILTIPLE OF LINE HEIGHT SO THE DISTANCE MOVES TO ANOTHER LINE LIKE NOTHING HAPPENED
+}
+
+.p-notebook-line {
+    padding: 2ch !important;
 }
