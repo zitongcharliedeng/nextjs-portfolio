@@ -37,7 +37,7 @@ $smaller-screen-length: min(90vh, 90vw);
 
 // END: header tabs //
 
-.notebook-lines {
+.light\:notebook-lines-light {
     font-size: larger;
     // self
     $notebook-yellow: rgb(194, 165, 36);
@@ -50,7 +50,21 @@ $smaller-screen-length: min(90vh, 90vw);
     a {
         text-decoration: underline;
     }
-    // TODO: PADDING IS CAUSING TEXT TO NOT LIE ON THE NOTEBOOK COORECTLYY, MB NAKE THE PADDING A MUILTIPLE OF LINE HEIGHT SO THE DISTANCE MOVES TO ANOTHER LINE LIKE NOTHING HAPPENED
+}
+
+.dark\:notebook-lines-dark  {
+    font-size: larger;
+    // self
+    $notebook-blue: rgb(46, 57, 107);
+    $notebook-grey: rgba(102, 102, 102, 0.884);
+    background-image: repeating-linear-gradient($notebook-grey 0ch, $notebook-grey 1.8ch, $notebook-blue 1.8ch, $notebook-blue 2ch);
+    background-size: 100% 2ch;
+    line-height: 2ch;
+    // children
+    color: black;
+    a {
+        text-decoration: underline;
+    }
 }
 
 .p-notebook-line {

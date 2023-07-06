@@ -1,11 +1,11 @@
 import { Card, CardBody } from "@nextui-org/card"
-import { Spacer } from "@nextui-org/spacer"
 
 export default function Home() {
+    // const theme = useTheme();
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-                <Card className="border-none notebook-lines inline-block dark:bg-black dark:text-white">
+                <Card className="notebook-lines-light dark:notebook-lines-dark inline-block">
                     <CardBody className="p-notebook-line">
                         <p>Welcome to my coding portfolio site.</p>
                         <br />
