@@ -37,7 +37,7 @@ $smaller-screen-length: min(90vh, 90vw);
 
 // END: header tabs //
 
-.light\:notebook-lines-light {
+.notebook-lines-light {
     font-size: larger;
     // self
     $notebook-yellow: rgb(194, 165, 36);
@@ -52,7 +52,7 @@ $smaller-screen-length: min(90vh, 90vw);
     }
 }
 
-.dark\:notebook-lines-dark  {
+.notebook-lines-dark {
     font-size: larger;
     // self
     $notebook-blue: rgb(46, 57, 107);

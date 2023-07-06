@@ -3,16 +3,14 @@
 import "./globals.scss"
 import Header from "./_layout/Header"
 import Footer from "./_layout/Footer"
-import { Providers } from "./_layout/providers"
+import { Providers } from "./_layout/Providers"
 import React from "react"
 import { useRouter } from "next/navigation"
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     const router = useRouter()
-
-    const [darkMode, setDarkMode] = React.useState(true)
     return (
-        <html lang="en" className={darkMode ? "dark" : "light"}>
+        <html suppressHydrationWarning lang="en">
             <head>
                 <title>the zcd portfolio</title>
             </head>
@@ -20,8 +18,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body>
                 <Providers>
                     <div className="floppy-disk-1 flex flex-col bg-gradient-radial from-black to-white shadow-lg border-2 border-gray-300 rounded-lg">
-                        <Header router={router} darkMode={darkMode} setDarkMode={setDarkMode} />
-                        <main className="dark:notebook-lines-dark light:notebook-lines-light flex-grow overflow-y-auto p-notebook-line">{children}</main>
+                        <Header router={router} />
+                        <main className="flex-grow overflow-y-auto p-notebook-line">{children}</main>
                         <Footer />
                     </div>
                 </Providers>
