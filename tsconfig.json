@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/_layout/_Header/ControlledTabs.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/_layout/_Header/ControlledTabs.js", "app/education/_page/CameraIcon.tsx"],
   "exclude": ["node_modules"]
 }

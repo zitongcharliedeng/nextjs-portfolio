@@ -1,33 +1,44 @@
-import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/table"
-
+"use client"
+// TODO: figure out why the individual server side table doesnt work and why i need to use client zzz
+import { Table, TableHeader, TableBody, TableColumn, TableRow, TableCell, Button } from "@nextui-org/react"
+import { CameraIcon } from "./CameraIcon"
+import AttachmentPopover from "./AttachmentPopover"
 export default function CertificateTable() {
     return (
-        <Table aria-label="Example static collection table">
+        <Table aria-label="A-level Grades 2022">
             <TableHeader>
-                <TableColumn>NAME</TableColumn>
-                <TableColumn>ROLE</TableColumn>
-                <TableColumn>STATUS</TableColumn>
+                <TableColumn>Subject</TableColumn>
+                <TableColumn>Grade</TableColumn>
+                <TableColumn>Attachments</TableColumn>
             </TableHeader>
             <TableBody>
-                <TableRow key="1">
-                    <TableCell>Tony Reichert</TableCell>
-                    <TableCell>CEO</TableCell>
-                    <TableCell>Active</TableCell>
+                <TableRow>
+                    <TableCell>Further Maths (+ Stats, Mech)</TableCell>
+                    <TableCell>A (lost the * due to a misread DX)</TableCell>
+                    <TableCell>
+                        <AttachmentPopover />
+                    </TableCell>
                 </TableRow>
-                <TableRow key="2">
-                    <TableCell>Zoey Lang</TableCell>
-                    <TableCell>Technical Lead</TableCell>
-                    <TableCell>Paused</TableCell>
+                <TableRow>
+                    <TableCell>Maths (+ Stats, Mech)</TableCell>
+                    <TableCell>A*</TableCell>
+                    <TableCell>
+                        <AttachmentPopover />
+                    </TableCell>
                 </TableRow>
-                <TableRow key="3">
-                    <TableCell>Jane Fisher</TableCell>
-                    <TableCell>Senior Developer</TableCell>
-                    <TableCell>Active</TableCell>
+                <TableRow>
+                    <TableCell>Physics</TableCell>
+                    <TableCell>A*</TableCell>
+                    <TableCell>
+                        <AttachmentPopover />
+                    </TableCell>
                 </TableRow>
-                <TableRow key="4">
-                    <TableCell>William Howard</TableCell>
-                    <TableCell>Community Manager</TableCell>
-                    <TableCell>Vacation</TableCell>
+                <TableRow>
+                    <TableCell>Chemistry</TableCell>
+                    <TableCell>A*</TableCell>
+                    <TableCell>
+                        <AttachmentPopover />
+                    </TableCell>
                 </TableRow>
             </TableBody>
         </Table>

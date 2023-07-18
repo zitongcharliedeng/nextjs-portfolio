@@ -71,3 +71,6 @@ $smaller-screen-length: min(90vh, 90vw);
 .p-notebook-line {
     padding: 2ch !important;
 }
+.photo-attachment-tall-popover-content {
+    height: $smaller-screen-length;
+}

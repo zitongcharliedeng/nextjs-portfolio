@@ -1,7 +1,6 @@
 import { Card, CardBody } from "@nextui-org/card"
 
 export default function Home() {
-    // const theme = useTheme();
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">

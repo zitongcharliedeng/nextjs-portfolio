@@ -16,6 +16,12 @@ export default function HeaderTabs({router}: {router:any}) {
                 "The home page, a general about section/ summary of this site.",
         },
         {
+            link: "education",
+            label: "Education",
+            description:
+                "My school grades, bootcamps and other certifications.",
+        },
+        {
             link: "projects",
             label: "Projects",
             description:

@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@nextui-org/react": "^0.0.0-dev-v2-20230625233448",
+    "@nextui-org/table": "^0.0.0-dev-v2-20230625233448",
     "framer-motion": "^10.12.17",
-    "next": "^13.4.7",
+    "next": "^13.4.10",
     "next-themes": "^0.2.1",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
