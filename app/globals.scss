@@ -37,8 +37,10 @@ $smaller-screen-length: min(90vh, 90vw);
 
 // END: header tabs //
 
-.notebook-lines-light {
-    font-size: larger;
+.notebook-lines {
+    font-size: inherit;
+}
+[data-theme='light'] .notebook-lines {
     // self
     $notebook-yellow: rgb(194, 165, 36);
     $notebook-white: rgba(255, 255, 255, 0.884);
@@ -52,8 +54,7 @@ $smaller-screen-length: min(90vh, 90vw);
     }
 }
 
-.notebook-lines-dark {
-    font-size: larger;
+[data-theme='dark'] .notebook-lines {
     // self
     $notebook-blue: rgb(46, 57, 107);
     $notebook-grey: rgba(102, 102, 102, 0.884);
@@ -61,7 +62,7 @@ $smaller-screen-length: min(90vh, 90vw);
     background-size: 100% 2ch;
     line-height: 2ch;
     // children
-    color: black;
+    color: whitesmoke;
     a {
         text-decoration: underline;
     }

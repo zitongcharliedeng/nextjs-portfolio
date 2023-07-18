@@ -5,8 +5,8 @@ export default function Home() {
     return (
         <div className="flex flex-col gap-4">
             <div className="flex flex-row gap-4">
-                <Card className="notebook-lines-light dark:notebook-lines-dark inline-block">
-                    <CardBody className="p-notebook-line">
+                <Card className="border-none notebook-lines inline-block">
+                    <CardBody className="p-notebook-line backdrop-blur-sm">
                         <p>Welcome to my coding portfolio site.</p>
                         <br />
                         <p>Built in Next 13 and Tailwind.</p>
@@ -14,7 +14,7 @@ export default function Home() {
                     </CardBody>
                 </Card>
                 <Card className="border-none notebook-lines inline-block">
-                    <CardBody className="p-notebook-line">
+                    <CardBody className="p-notebook-line backdrop-blur-sm">
                         Welcome.
                         <br />
                         This is my coding portfolio site.
@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row gap-4">
                 <Card className="border-none notebook-lines inline-block">
-                    <CardBody className="p-notebook-line">
+                    <CardBody className="p-notebook-line backdrop-blur-sm">
                         <b>TABLE OF CONTENTS</b>
                         <br />
                         <br />
