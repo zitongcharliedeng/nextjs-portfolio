@@ -6,11 +6,11 @@ import ThemeSwitch from "./_Header/ThemeSwitch"
 
 export default function Header({ router, }: { router: any, }) {
     return (
-        <header>
+        <header className="starry-container">
             <nav className="flex flex-row align-middle justify-between bg-gray-800 text-white px-4 py-2 rounded-t-lg">
                 <HeaderTabs router={router} />
                 <div className="flex flex-col items-center">
-                    <ThemeSwitch/>
+                    <ThemeSwitch />
                     <Image className="mt-auto py-1" width={90} height={90} alt="LinkedIn Image" src="linkedin.svg" />
                 </div>
             </nav>
