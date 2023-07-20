@@ -6,8 +6,8 @@ import ThemeSwitch from "./_Header/ThemeSwitch"
 
 export default function Header({ router, }: { router: any, }) {
     return (
-        <header className="starry-container">
-            <nav className="flex flex-row align-middle justify-between bg-gray-800 text-white px-4 py-2 rounded-t-lg">
+        <header>
+            <nav className="flex flex-row align-middle justify-between bg-gray-800 text-white px-4 py-2 rounded-t-lg starry-container">
                 <HeaderTabs router={router} />
                 <div className="flex flex-col items-center">
                     <ThemeSwitch />
