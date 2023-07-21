@@ -20,8 +20,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <div id="stars"></div>
                     <div id="stars2"></div>
                     <div id="stars3"></div>
-                    <div className="starry-text starry-container">
-                        HHHHHHHHHHHHHHHHHHHHHHh
+                    <div className="starry-text starry-container text-center">
+                        Zi-Tong Charlie Deng's Coding Portfolio
                     </div>
                     <div id="content">
                         <div className="floppy-disk-1 flex flex-col bg-gradient-radial from-black to-white shadow-lg border-2 border-gray-300 rounded-lg">
