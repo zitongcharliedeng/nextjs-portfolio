@@ -1,6 +1,9 @@
-import CertificateTable from "./_page/CertificateTable";
-
+import CertificationsTable from "./_page/CertificationsTable";
 
 export default function Education() {
-    return(<div><CertificateTable /></div>)
+    return (
+        <div className="space-y-4">
+            <CertificationsTable />
+        </div>
+    )
 }   
