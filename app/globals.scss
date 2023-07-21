@@ -72,11 +72,11 @@ $smaller-screen-length: min(90vh, 90vw);
     padding: 2ch !important;
 }
 .photo-attachment-tall-popover-content {
+  img {
     height: $smaller-screen-length;
-    img {
-        object-fit: contain;
-        object-position: center;
-    }
+    object-fit: contain;
+    object-position: center;
+  }
 }
 
 
